@@ -106,6 +106,7 @@ doc.css('#_ctl2_myGrid tr')[1..-1].each_with_index do |row, index|
   # 學年 / 學期 / 年級 / 班別 / 開課單位 / 開課序號 / 主要開課序號 / 課程名稱 / 修課人數...
   year = doc.css('#CourseDetail1_year').text.strip
   if year == ""
+    # 一個 DDOS 的概念
     redo
   end
   term = doc.css('#CourseDetail1_term').text.strip
